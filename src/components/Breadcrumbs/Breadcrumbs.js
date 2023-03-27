@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 import { COLORS } from '../../constants';
 
 const Breadcrumbs = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+  return <Wrapper>{children}</Wrapper>;   
 };
 
 Breadcrumbs.Crumb = ({ href, children, delegated }) => {
@@ -41,5 +41,6 @@ const CrumbLink = styled.a`
 const Wrapper = styled.nav`
   display: flex;
   font-size: 0.875rem;
+  margin-top: 14px;
 `;
 export default Breadcrumbs;

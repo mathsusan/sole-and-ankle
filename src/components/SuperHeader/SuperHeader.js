@@ -13,19 +13,30 @@ const SuperHeader = () => {
       <MarketingMessage>
         Free shipping on domestic orders over $75!
       </MarketingMessage>
+      <RightSide>
       <SearchInput />
       <HelpLink href="/help">Help</HelpLink>
       <UnstyledButton>
         <Icon id="shopping-bag" strokeWidth={1} />
       </UnstyledButton>
+      </RightSide>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
+  padding: 8px;
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const RightSide = styled.div`
+  display: flex;
+  gap: 16px;
 `;
 
 const MarketingMessage = styled.span`
